@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="es.trapasoft.android.personaclient.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etID"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:hint="Introduzca ID de Usuario"
+            android:layout_weight="1"
+            android:layout_margin="5dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGo"
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGoList"
+            android:src="@drawable/ic_list_black_24dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado de la consulta"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcc80"
+        android:text="..."
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvPersonas"
+        android:layout_marginTop="20dp" />
+
+
+</LinearLayout>

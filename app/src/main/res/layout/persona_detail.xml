@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Detalle Persona"
+        android:id="@+id/tvTitulo"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pericles"
+        android:id="@+id/tvResumen"
+        android:layout_marginBottom="20dp" />
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:id="@+id/imgFoto"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/persona11"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre:"
+                    android:layout_weight="1"
+                    android:textColor="#303f9f"
+                    android:textStyle="normal|bold"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_marginRight="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="María"
+                    android:id="@+id/tvNombre"
+                    android:layout_weight="3"
+                    android:layout_gravity="left" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dirección:"
+                    android:layout_weight="1"
+                    android:textColor="#303f9f"
+                    android:textStyle="normal|bold"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_marginRight="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Suspiro Verde, 13"
+                    android:id="@+id/tvCalle"
+                    android:layout_weight="3"
+                    android:layout_gravity="left" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cód. Postal"
+                    android:layout_weight="1"
+                    android:textColor="#303f9f"
+                    android:textStyle="normal|bold"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_marginRight="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="28070"
+                    android:id="@+id/tvZip"
+                    android:layout_weight="3"
+                    android:layout_gravity="left" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfono"
+                    android:layout_weight="1"
+                    android:textColor="#303f9f"
+                    android:textStyle="normal|bold"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_marginRight="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="333333333"
+                    android:id="@+id/tvPhone"
+                    android:layout_weight="3"
+                    android:layout_gravity="left" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ciudad"
+                    android:layout_weight="1"
+                    android:textColor="#303f9f"
+                    android:textStyle="normal|bold"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_marginRight="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Colmenar Viejo"
+                    android:id="@+id/tvCity"
+                    android:layout_weight="3"
+                    android:layout_gravity="left" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Departamento"
+                    android:layout_weight="1"
+                    android:textColor="#303f9f"
+                    android:textStyle="normal|bold"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_marginRight="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="23"
+                    android:id="@+id/tvDeptId"
+                    android:layout_weight="3"
+                    android:layout_gravity="left" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>
